@@ -244,6 +244,12 @@ p {
   font-size: 17px;
 }
 
+.cover-center h1,
+.cover-copy,
+.contact-main h2 {
+  white-space: pre-line;
+}
+
 .cover-bottom {
   width: 100%;
   display: flex;
@@ -644,18 +650,22 @@ p {
 
 .slide-trust {
   display: grid;
-  grid-template-columns: 0.9fr 0.8fr;
+  grid-template-columns: minmax(0, 1fr) minmax(330px, 0.68fr);
   grid-template-rows: auto auto;
   align-content: center;
-  gap: 40px 72px;
+  gap: 30px 72px;
 }
 
 .trust-statement {
+  grid-column: 1;
+  grid-row: 1;
   display: grid;
   gap: 18px;
 }
 
 .trust-metrics {
+  grid-column: 2;
+  grid-row: 1 / span 2;
   display: grid;
   gap: 0;
   border-top: 1px solid var(--line-dark);
@@ -681,21 +691,28 @@ p {
   font-weight: 760;
 }
 
-.quote-panel {
-  grid-column: 1 / -1;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 28px;
+.comment-reaction {
+  grid-column: 1;
+  grid-row: 2;
+  align-self: start;
+  width: 100%;
+  height: clamp(198px, 27dvh, 244px);
+  margin: 0;
+  padding: 0;
+  border: 1px solid var(--line);
+  background: #151a1d;
+  overflow: hidden;
 }
 
-.quote-panel blockquote {
-  margin-bottom: 0;
-  padding: 22px 0 0;
-  border-top: 1px solid var(--line);
-  color: var(--muted);
-  font-size: 18px;
-  font-weight: 520;
-  line-height: 1.65;
+.comment-reaction img {
+  display: block;
+  width: 80%;
+  height: auto;
+  margin: 8px auto 0;
+}
+
+.comment-reaction figcaption {
+  display: none;
 }
 
 .slide-style {
@@ -1141,9 +1158,12 @@ p {
   }
 
   .slide-index,
+  .trust-statement,
+  .trust-metrics,
   .metric-table,
-  .quote-panel {
+  .comment-reaction {
     grid-column: auto;
+    grid-row: auto;
   }
 
   .audience-composition,
@@ -1226,7 +1246,7 @@ p {
   .audience-composition,
   .image-led-grid,
   .case-pair,
-  .quote-panel,
+  .comment-reaction,
   .moodboard,
   .reason-list li,
   .opportunity-table,
@@ -1242,6 +1262,15 @@ p {
     width: 106px;
     min-height: 126px;
     margin-top: 10px;
+  }
+
+  .comment-reaction {
+    height: 176px;
+  }
+
+  .comment-reaction img {
+    width: 86%;
+    margin-top: 6px;
   }
 
   .cover-bottom {

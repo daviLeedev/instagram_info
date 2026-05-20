@@ -4,9 +4,17 @@
   "type": "module",
   "scripts": {
     "dev": "nuxt dev",
+    "dev:browser": "nuxt dev --open",
+    "dev:network": "nuxt dev --host 0.0.0.0 --port 3000",
     "build": "nuxt build",
+    "build:browser": "nuxt generate",
+    "build:local": "nuxt build",
+    "build:cloudflare": "nuxt build --preset=cloudflare-pages",
+    "check:browser": "nuxt generate && node scripts/serve-static.mjs .output/public 3000",
     "generate": "nuxt generate",
-    "preview": "nuxt preview"
+    "preview": "nuxt preview --host 127.0.0.1 --port 3000",
+    "preview:local": "nuxt preview --host 127.0.0.1 --port 3000",
+    "preview:browser": "node scripts/serve-static.mjs .output/public 3000"
   },
   "dependencies": {
     "nuxt": "^3.17.5",

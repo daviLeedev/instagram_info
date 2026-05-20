@@ -1,0 +1,398 @@
+{
+  "meta": {
+    "handle": "@ooooning_hi",
+    "deckType": "Partnership Portfolio",
+    "year": "2026 Media Kit",
+    "instagramUrl": "https://www.instagram.com/ooooning_hi/",
+    "email": "dkssud2608@naver.com"
+  },
+  "slides": [
+    "Cover",
+    "About",
+    "Snapshot",
+    "Audience",
+    "Performance 01",
+    "Performance 02",
+    "Performance 03",
+    "Performance 04",
+    "Performance 05",
+    "Trust",
+    "Style",
+    "Why",
+    "Opportunity",
+    "Deliverables",
+    "Evidence",
+    "Contact"
+  ],
+  "cover": {
+    "mark": "OH",
+    "eyebrow": "Organic lifestyle creator",
+    "headline": "일상의 기록이\n누군가의 다음 특별한 순간이 될 수 있도록",
+    "body": "사람들이 저장하고 따라가고 싶은\n데이터, 공간, 푸드 그리고 로컬 경험을 기록하며 직접 방문하고 싶어지는 콘텐츠를 만듭니다.",
+    "qrLabel": "Scan Instagram",
+    "categories": [
+      "Food",
+      "Cafe",
+      "Local Experience",
+      "Reels"
+    ]
+  },
+  "about": {
+    "index": "01",
+    "kicker": "About the Creator",
+    "headline": "광고 없이도 반응으로 증명된 콘텐츠 반응",
+    "body": "ooooning_hi는 2030을 중심으로 40대까지 공감할 수 있는 일상, 데이트, 공간 경험을 직접 기록하고 콘텐츠로 풀어냅니다.사람들이 실제로 궁금해하고 저장하고 싶은 곳을 빠르게 읽어내며,개인 콘텐츠만으로 높은 도달과 프로필 유입을 만들었습니다.단순 조회수가 아닌 저장 → 관심 → 방문으로 이어지는 경험형 콘텐츠를 만듭니다.",
+    "notes": [
+      {
+        "title": "Content Lens",
+        "body": "방문 전 저장하고 싶은 발견형 스토리텔링"
+      },
+      {
+        "title": "Brand Fit",
+        "body": "외식, 카페, 호텔, 뷰티, 로컬 브랜드와 자연스러운 연결"
+      },
+      {
+        "title": "Positioning",
+        "body": "광고처럼 보이지 않는 실제 경험 기반 콘텐츠"
+      }
+    ]
+  },
+  "snapshot": {
+    "kicker": "Channel Snapshot",
+    "headline": "최근 30일, 유기적 성과로 확인된 확산력",
+    "heroLabel": "Reach / Views",
+    "heroValue": "1,043,296",
+    "heroPeriod": "2026.04.19 - 2026.05.18",
+    "metrics": [
+      {
+        "label": "최근 30일 조회수",
+        "value": "1,043,296",
+        "helper": "4월 19일 - 5월 18일"
+      },
+      {
+        "label": "도달한 계정",
+        "value": "539,290",
+        "helper": "+16,721.3%"
+      },
+      {
+        "label": "프로필 방문",
+        "value": "57,004",
+        "helper": "+4,861.2%"
+      },
+      {
+        "label": "반응",
+        "value": "1.2만",
+        "helper": "콘텐츠 참여 신호"
+      },
+      {
+        "label": "새 팔로워",
+        "value": "176",
+        "helper": "최근 30일"
+      },
+      {
+        "label": "공유된 콘텐츠",
+        "value": "103",
+        "helper": "회원 공유 기준"
+      }
+    ]
+  },
+  "audience": {
+    "kicker": "Audience Demographics",
+    "headline": "서울 중심, 25-34 여성 오디언스",
+    "cards": [
+      {
+        "title": "상위 거주 도시",
+        "rows": [
+          [
+            "서울",
+            27.5
+          ],
+          [
+            "부산",
+            5.7
+          ],
+          [
+            "인천",
+            5.6
+          ],
+          [
+            "대구",
+            4.5
+          ]
+        ]
+      },
+      {
+        "title": "상위 연령대",
+        "rows": [
+          [
+            "25-34",
+            59.6
+          ],
+          [
+            "18-24",
+            19.2
+          ],
+          [
+            "35-44",
+            16.2
+          ],
+          [
+            "45-54",
+            4.1
+          ]
+        ]
+      },
+      {
+        "title": "성별",
+        "rows": [
+          [
+            "여성",
+            89.8
+          ],
+          [
+            "남성",
+            10.2
+          ]
+        ]
+      }
+    ]
+  },
+  "performance": {
+    "kicker": "Top Content Performance",
+    "thumbnailCaption": "Reels thumbnail",
+    "insightCaption": "Instagram insight",
+    "cases": [
+      {
+        "eyebrow": "Case 01",
+        "title": "Birthday Gift Reel",
+        "headline": "선물 콘텐츠가 대규모 조회로 확장된 사례",
+        "reach": "67만",
+        "summary": "감정이 있는 일상 장면과 선물 맥락이 결합되어 높은 조회와 저장 행동으로 이어졌습니다.",
+        "note": "조회 670,698 · 반응 6,306 · 저장 577",
+        "thumb": "/reels-cases/case-01-thumb.jpg",
+        "insight": "/reels-cases/case-01-insight.jpg"
+      },
+      {
+        "eyebrow": "Case 02",
+        "title": "Busan Travel Course",
+        "headline": "여행 코스형 콘텐츠의 저장 가능성",
+        "reach": "5.4만",
+        "summary": "부산 여행 코스처럼 재방문과 일정 참고가 가능한 포맷은 브랜드 제안에도 확장성이 높습니다.",
+        "note": "조회 54,544 · 공유 84 · 저장 146",
+        "thumb": "/reels-cases/case-02-thumb.jpg",
+        "insight": "/reels-cases/case-02-insight.jpg"
+      },
+      {
+        "eyebrow": "Case 03",
+        "title": "Anniversary Date",
+        "headline": "데이트 목적지 발견을 만드는 릴스",
+        "reach": "1.7만",
+        "summary": "공간, 메뉴, 상황을 함께 보여주는 구성은 레스토랑과 카페 협찬 콘텐츠에 바로 적용할 수 있습니다.",
+        "note": "조회 13,298 · 반응 199 · 저장 74",
+        "thumb": "/reels-cases/case-03-thumb.jpg",
+        "insight": "/reels-cases/case-03-insight.jpg"
+      },
+      {
+        "eyebrow": "Case 04",
+        "title": "Mangwon-dong Date",
+        "headline": "로컬 산책형 콘텐츠의 높은 저장 신호",
+        "reach": "3.9만",
+        "summary": "지역명과 데이트 동선이 명확한 콘텐츠는 실제 방문 계획으로 이어지기 좋은 구조입니다.",
+        "note": "조회 39,267 · 공유 272 · 저장 415",
+        "thumb": "/reels-cases/case-04-thumb.jpg",
+        "insight": "/reels-cases/case-04-insight.jpg"
+      },
+      {
+        "eyebrow": "Case 05",
+        "title": "Jeju Course",
+        "headline": "여행 경험을 가볍게 따라가게 만드는 형식",
+        "reach": "5.6만",
+        "summary": "짧은 여행 기록도 코스 제안처럼 보이게 설계하면 지역 브랜드와 숙박, F&B 협업에 적합합니다.",
+        "note": "조회 56,493 · 공유 365 · 저장 253",
+        "thumb": "/reels-cases/case-05-thumb.jpg",
+        "insight": "/reels-cases/case-05-insight.jpg"
+      }
+    ]
+  },
+  "trust": {
+    "kicker": "Engagement Quality",
+    "headline": "조회에서 방문 의향으로 이어지는 신호",
+    "body": "브랜드 협업에서 중요한 것은 노출 그 자체보다 저장, 공유, 프로필 방문처럼 다음 행동으로 이어지는 반응입니다.",
+    "metrics": [
+      {
+        "value": "57,004",
+        "label": "프로필 방문"
+      },
+      {
+        "value": "103",
+        "label": "공유된 콘텐츠"
+      },
+      {
+        "value": "1.2만",
+        "label": "콘텐츠 반응"
+      }
+    ],
+    "commentImage": {
+      "src": "/comment-reaction.jpg",
+      "label": "댓글 반응 예시"
+    }
+  },
+  "style": {
+    "kicker": "Content Style Showcase",
+    "headline": "푸드, 카페, 로컬 경험을 하나의 톤으로",
+    "images": [
+      {
+        "src": "/style-showcase/style-01.jpg",
+        "label": "Dining Story"
+      },
+      {
+        "src": "/style-showcase/style-02.jpg",
+        "label": "Food Discovery"
+      },
+      {
+        "src": "/style-showcase/style-03.jpg",
+        "label": "Travel Mood"
+      },
+      {
+        "src": "/style-showcase/style-04.jpg",
+        "label": "Cafe Moment"
+      },
+      {
+        "src": "/style-showcase/style-05.jpg",
+        "label": "Local Dining"
+      },
+      {
+        "src": "/style-showcase/style-06.jpg",
+        "label": "City Travel"
+      }
+    ]
+  },
+  "why": {
+    "kicker": "Why Collaborate",
+    "headline": "브랜드가 먼저 테스트해볼 이유",
+    "reasons": [
+      {
+        "title": "강한 유기적 도달",
+        "body": "광고 집행 없이 최근 30일 100만 이상의 조회 경험"
+      },
+      {
+        "title": "로컬 구매 맥락",
+        "body": "서울과 수도권 방문 가능성이 높은 오디언스 구성"
+      },
+      {
+        "title": "발견형 콘텐츠",
+        "body": "맛집, 카페, 공간, 제품을 저장 가능한 정보로 소개"
+      },
+      {
+        "title": "첫 협업 프리미엄",
+        "body": "초기 브랜드 사례로 더 정성 높은 콘텐츠 설계 가능"
+      }
+    ]
+  },
+  "opportunity": {
+    "kicker": "Partnership Opportunities",
+    "headline": "브랜드 목적에 맞춘 협업 메뉴",
+    "items": [
+      [
+        "01",
+        "Restaurant Review",
+        "레스토랑 방문 리뷰"
+      ],
+      [
+        "02",
+        "Cafe Launch",
+        "카페 신메뉴 / 신규 공간 소개"
+      ],
+      [
+        "03",
+        "Hotel Stay",
+        "호텔 및 공간 경험 콘텐츠"
+      ],
+      [
+        "04",
+        "Product Placement",
+        "제품 플레이스먼트"
+      ],
+      [
+        "05",
+        "Event Coverage",
+        "이벤트 현장 커버리지"
+      ],
+      [
+        "06",
+        "Reels Production",
+        "릴스 및 숏폼 제작"
+      ],
+      [
+        "07",
+        "Story Promotion",
+        "스토리 홍보"
+      ],
+      [
+        "08",
+        "UGC Delivery",
+        "브랜드 소유 UGC 납품"
+      ]
+    ]
+  },
+  "deliverables": {
+    "kicker": "Deliverables",
+    "headline": "작게 시작하고 성과에 맞춰 확장",
+    "packages": [
+      {
+        "label": "Starter",
+        "title": "방문 리뷰",
+        "lines": [
+          "방문 콘텐츠 1건",
+          "스토리 2컷",
+          "기본 인사이트 공유"
+        ]
+      },
+      {
+        "label": "Growth",
+        "title": "릴스 중심",
+        "lines": [
+          "릴스 1건",
+          "피드/스토리 연계",
+          "성과 리포트"
+        ]
+      },
+      {
+        "label": "Custom",
+        "title": "캠페인형",
+        "lines": [
+          "호텔, 행사, 시즌 프로모션",
+          "UGC 납품 등 별도 구성"
+        ]
+      }
+    ]
+  },
+  "evidence": {
+    "kicker": "Insight Evidence",
+    "headline": "협업 제안의 근거가 되는 실제 인사이트",
+    "body": "아래 이미지는 인스타그램 프로페셔널 대시보드에서 확인한 최근 30일 인사이트 자료입니다. 브랜드 제안 시 수치의 출처를 함께 확인할 수 있도록 별도 페이지로 분리했습니다.",
+    "images": [
+      {
+        "src": "/insights/reach.jpg",
+        "label": "조회수 인사이트"
+      },
+      {
+        "src": "/insights/cities.jpg",
+        "label": "도시 분포"
+      },
+      {
+        "src": "/insights/age.jpg",
+        "label": "연령대"
+      },
+      {
+        "src": "/insights/gender.jpg",
+        "label": "성별"
+      }
+    ]
+  },
+  "contact": {
+    "eyebrow": "Contact",
+    "headline": "브랜드의 첫 발견을\n함께 만들겠습니다.",
+    "qrLabel": "Instagram QR"
+  }
+}
