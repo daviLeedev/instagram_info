@@ -5,9 +5,25 @@ const deck = ref<HTMLElement | null>(null)
 const currentSlide = ref(0)
 let scrollSyncTimer: ReturnType<typeof setTimeout> | undefined
 
-const slides = content.slides
+const slides = [
+  content.slides[0],
+  content.slides[1],
+  content.slides[14],
+  content.slides[4],
+  content.slides[5],
+  content.slides[8],
+  content.slides[7],
+  content.slides[6],
+  content.slides[2],
+  content.slides[10],
+  content.slides[9],
+  content.slides[12],
+  content.slides[13],
+  content.slides[15]
+]
 const metrics = content.snapshot.metrics
 const audienceCards = content.audience.cards
+const activePerformanceCases = [0, 1, 4, 3, 2].map((index) => content.performance.cases[index])
 
 const progressWidth = computed(() => `${((currentSlide.value + 1) / slides.length) * 100}%`)
 
@@ -91,43 +107,40 @@ onBeforeUnmount(() => {
           </div>
         </article>
 
-        <article class="slide slide-snapshot">
-          <div class="snapshot-lead">
-            <p class="kicker">{{ content.snapshot.kicker }}</p>
-            <h2>{{ content.snapshot.headline }}</h2>
+        <article class="slide slide-evidence">
+          <div class="evidence-heading">
+            <p class="kicker">{{ content.evidence.kicker }}</p>
+            <h2>{{ content.evidence.headline }}</h2>
+            <p>{{ content.evidence.body }}</p>
           </div>
-          <div class="hero-stat">
-            <span>{{ content.snapshot.heroLabel }}</span>
-            <strong>{{ content.snapshot.heroValue }}</strong>
-            <small>{{ content.snapshot.heroPeriod }}</small>
+          <div class="evidence-grid">
+            <figure v-for="image in content.evidence.images" :key="image.src">
+              <img :src="image.src" :alt="image.label" />
+              <figcaption>{{ image.label }}</figcaption>
+            </figure>
           </div>
-          <div class="metric-table">
-            <div v-for="metric in metrics.slice(1)" :key="metric.label">
-              <span>{{ metric.label }}</span>
-              <strong>{{ metric.value }}</strong>
-              <small>{{ metric.helper }}</small>
+        </article>
+
+        <template v-if="false">
+          <article class="slide slide-audience">
+            <div class="slide-heading">
+              <p class="kicker">{{ content.audience.kicker }}</p>
+              <h2>{{ content.audience.headline }}</h2>
             </div>
-          </div>
-        </article>
+            <div class="audience-composition">
+              <section v-for="card in audienceCards" :key="card.title" class="chart-card">
+                <h3>{{ card.title }}</h3>
+                <div v-for="[label, value] in card.rows" :key="label" class="chart-row">
+                  <span>{{ label }}</span>
+                  <div><i :style="{ width: `${Math.min(value * 1.45, 100)}%` }" /></div>
+                  <strong>{{ value }}%</strong>
+                </div>
+              </section>
+            </div>
+          </article>
+        </template>
 
-        <article class="slide slide-audience">
-          <div class="slide-heading">
-            <p class="kicker">{{ content.audience.kicker }}</p>
-            <h2>{{ content.audience.headline }}</h2>
-          </div>
-          <div class="audience-composition">
-            <section v-for="card in audienceCards" :key="card.title" class="chart-card">
-              <h3>{{ card.title }}</h3>
-              <div v-for="[label, value] in card.rows" :key="label" class="chart-row">
-                <span>{{ label }}</span>
-                <div><i :style="{ width: `${Math.min(value * 1.45, 100)}%` }" /></div>
-                <strong>{{ value }}%</strong>
-              </div>
-            </section>
-          </div>
-        </article>
-
-        <article v-for="reelCase in content.performance.cases" :key="reelCase.title" class="slide slide-performance-case">
+        <article v-for="reelCase in activePerformanceCases" :key="reelCase.title" class="slide slide-performance-case">
           <div class="performance-case-copy">
             <p class="kicker">{{ content.performance.kicker }} · {{ reelCase.eyebrow }}</p>
             <h2>{{ reelCase.headline }}</h2>
@@ -150,6 +163,38 @@ onBeforeUnmount(() => {
           </div>
         </article>
 
+        <article class="slide slide-snapshot">
+          <div class="snapshot-lead">
+            <p class="kicker">{{ content.snapshot.kicker }}</p>
+            <h2>{{ content.snapshot.headline }}</h2>
+          </div>
+          <div class="hero-stat">
+            <span>{{ content.snapshot.heroLabel }}</span>
+            <strong>{{ content.snapshot.heroValue }}</strong>
+            <small>{{ content.snapshot.heroPeriod }}</small>
+          </div>
+          <div class="metric-table">
+            <div v-for="metric in metrics.slice(1)" :key="metric.label">
+              <span>{{ metric.label }}</span>
+              <strong>{{ metric.value }}</strong>
+              <small>{{ metric.helper }}</small>
+            </div>
+          </div>
+        </article>
+
+        <article class="slide slide-style">
+          <div class="style-copy">
+            <p class="kicker">{{ content.style.kicker }}</p>
+            <h2>{{ content.style.headline }}</h2>
+          </div>
+          <div class="moodboard">
+            <figure v-for="image in content.style.images" :key="image.src">
+              <img :src="image.src" :alt="image.label" />
+              <figcaption>{{ image.label }}</figcaption>
+            </figure>
+          </div>
+        </article>
+
         <article class="slide slide-trust">
           <div class="trust-statement">
             <p class="kicker">{{ content.trust.kicker }}</p>
@@ -167,28 +212,17 @@ onBeforeUnmount(() => {
           </figure>
         </article>
 
-        <article class="slide slide-style">
-          <div class="style-copy">
-            <p class="kicker">{{ content.style.kicker }}</p>
-            <h2>{{ content.style.headline }}</h2>
-          </div>
-          <div class="moodboard">
-            <figure v-for="image in content.style.images" :key="image.src">
-              <img :src="image.src" :alt="image.label" />
-              <figcaption>{{ image.label }}</figcaption>
-            </figure>
-          </div>
-        </article>
-
-        <article class="slide slide-why">
-          <p class="kicker">{{ content.why.kicker }}</p>
-          <h2>{{ content.why.headline }}</h2>
-          <ol class="reason-list">
-            <li v-for="reason in content.why.reasons" :key="reason.title">
-              <strong>{{ reason.title }}</strong><span>{{ reason.body }}</span>
-            </li>
-          </ol>
-        </article>
+        <template v-if="false">
+          <article class="slide slide-why">
+            <p class="kicker">{{ content.why.kicker }}</p>
+            <h2>{{ content.why.headline }}</h2>
+            <ol class="reason-list">
+              <li v-for="reason in content.why.reasons" :key="reason.title">
+                <strong>{{ reason.title }}</strong><span>{{ reason.body }}</span>
+              </li>
+            </ol>
+          </article>
+        </template>
 
         <article class="slide slide-opportunity">
           <div class="slide-heading">
@@ -219,20 +253,6 @@ onBeforeUnmount(() => {
                 </template>
               </span>
             </section>
-          </div>
-        </article>
-
-        <article class="slide slide-evidence">
-          <div class="evidence-heading">
-            <p class="kicker">{{ content.evidence.kicker }}</p>
-            <h2>{{ content.evidence.headline }}</h2>
-            <p>{{ content.evidence.body }}</p>
-          </div>
-          <div class="evidence-grid">
-            <figure v-for="image in content.evidence.images" :key="image.src">
-              <img :src="image.src" :alt="image.label" />
-              <figcaption>{{ image.label }}</figcaption>
-            </figure>
           </div>
         </article>
 
